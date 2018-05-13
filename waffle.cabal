@@ -1,0 +1,30 @@
+name:                waffle
+version:             0.1.0.0
+synopsis:            Haskell bindings to the Waffle API
+description:         Haskell interface to Waffle.io
+homepage:            https://github.com/urbint/waffle
+license:             BSD3
+license-file:        LICENSE
+author:              David Johnson
+maintainer:          david@urbint.com
+copyright:           Urbint Inc. 2018-2019
+category:            Web
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:
+    Waffle
+  build-depends:
+    aeson,
+    base,
+    bytestring,
+    http-client,
+    servant,
+    servant-client,
+    text
+  hs-source-dirs:
+    src
+  default-language:
+    Haskell2010
